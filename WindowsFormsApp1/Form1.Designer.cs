@@ -76,10 +76,10 @@ namespace WindowsFormsApp1
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.estructurasAprobadoEn = new System.Windows.Forms.ComboBox();
             this.pensamientoAprobadoEn = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.totalRegistros = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.datos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.indiceReprobacionMateriaMin)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.calificacionPensamientoMin)).BeginInit();
@@ -108,7 +108,7 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.indiceReprobacionProfesorMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.indiceReprobacionMateriaMax)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datos)).BeginInit();
             this.SuspendLayout();
             // 
             // indiceReprobacionMateriaMin
@@ -133,7 +133,7 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.totalRegistros);
             this.groupBox1.Controls.Add(this.pensamientoAprobadoEn);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label4);
@@ -524,7 +524,7 @@ namespace WindowsFormsApp1
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.datos);
             this.groupBox2.Location = new System.Drawing.Point(357, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(0);
@@ -558,13 +558,13 @@ namespace WindowsFormsApp1
             this.pensamientoAprobadoEn.Size = new System.Drawing.Size(116, 21);
             this.pensamientoAprobadoEn.TabIndex = 49;
             // 
-            // textBox1
+            // totalRegistros
             // 
-            this.textBox1.Location = new System.Drawing.Point(216, 427);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
-            this.textBox1.TabIndex = 50;
-            this.textBox1.Text = "1";
+            this.totalRegistros.Location = new System.Drawing.Point(216, 427);
+            this.totalRegistros.Name = "totalRegistros";
+            this.totalRegistros.Size = new System.Drawing.Size(116, 20);
+            this.totalRegistros.TabIndex = 50;
+            this.totalRegistros.Text = "1";
             // 
             // label16
             // 
@@ -585,14 +585,14 @@ namespace WindowsFormsApp1
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // datos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(287, 470);
-            this.dataGridView1.TabIndex = 0;
+            this.datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datos.Location = new System.Drawing.Point(0, 13);
+            this.datos.Name = "datos";
+            this.datos.Size = new System.Drawing.Size(287, 470);
+            this.datos.TabIndex = 0;
             // 
             // Form1
             // 
@@ -632,7 +632,7 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.indiceReprobacionProfesorMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.indiceReprobacionMateriaMax)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -688,8 +688,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ComboBox pensamientoAprobadoEn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox totalRegistros;
+        private System.Windows.Forms.DataGridView datos;
     }
 }
 
